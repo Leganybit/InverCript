@@ -37,9 +37,8 @@
         .fakeimg {
           background-color: #aaa;
           width: 100%;
-          padding: 20px;
+          padding: 5px;
         }
-
         /* Add a card effect for articles */
         .card {
           background-color: white;
@@ -81,7 +80,7 @@
   {% block content %} 
 <div class="container">
   <div class="header">
-    <h2>Blog Name</h2>
+    <h2>InverCript blog</h2>
   </div>
     <div class="row">
       {% block entry %}
@@ -89,7 +88,7 @@
       <div class="rightcolumn">
         <div class="card">
           <h2>About Me</h2>
-          <div class="fakeimg" style="height:100px;">Image</div>
+          <div class="lanza-logo" style="height:200px;"><img style="width:100% ; height:100%" src="/static/img/blog/logolanza.png"></div>
           <p>Invercript es una empresa especializada en gestión de activos criptográficos.</p>
         </div>
         <div class="card">
@@ -100,7 +99,7 @@
         </div>
         <div class="card">
           <h3>Follow Me</h3>
-          <p>Some text..</p>
+          <a href="https://twitter.com/invercript" target="_blank"><img src="/static/img/twitter.svg"></a>
         </div>
       </div>
     </div>
@@ -109,7 +108,7 @@
 
 {% block footer %}
   <div class="footer">
-    <h2>Footer</h2>
+    <h2>Invercript información</h2>
   </div>
 {% endblock %}
 

@@ -25,7 +25,10 @@ def create_app():
 		return render_template("/pages/blog/entradas/hyperledger.html")
 	@app.route("/blog/wiki")
 	def wiki():
-		return render_template("/pages/blog/entradas/wiki.html")		
+		return render_template("/pages/blog/entradas/wiki.html")
+	@app.route("/blog/top_10")
+	def top_10():
+		return render_template("/pages/blog/entradas/top_blockchains_usadas_empresas.html")		
 
 
 	return app

@@ -1,0 +1,30 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Top 10 tecnologías blockchain utilizadas por empresas</h1>
+      <h3>Hyperledger:</h3>
+      <p>Es una fundación enfocada en ayudar a las empresas a la hora de implementar tecnología blockchain. Actualmente es la compañía que más servicios criptográficos ofrece en el mercado con una lista de empresas que la utilizan enorme.</p>
+
+      <h3>Ethereum</h3>
+      <p>aquí escribo ethereum</p>
+
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}
