@@ -1,0 +1,27 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+
+<!---->
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Primeros ejemplos</h1>
+      <ul>
+        <li><a href="/blog/hyperledger">Hyperledger</a></li>
+      </ul>
+      <p>texto del ejemplo 1</p>
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}

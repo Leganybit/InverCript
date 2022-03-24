@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/btc.css"/>
+
+{% endblock %}
+{% block content %}
+<!---->
+
+<div class="container">
+  <br>
+  Los campos marcados con * serán obligatorios.
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email*</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Calle Federico García Lorca 23, Madrid, España">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Dirección 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Ciudad*</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Comunidad</label>
+    <select id="inputState" class="form-select">
+      <option selected>Galicia</option>
+      <option>Navarra</option>
+      <option>País Vasco</option>
+      <option>Aragón</option>
+      <option>Cataluña</option>
+      <option>Castilla y León</option>
+      <option>Madrid</option>
+      <option>Valencia</option>
+      <option>Castilla la Mancha</option>
+      <option>Andalucia</option>
+      <option>Valeares</option>
+      <option>Canarias</option>
+      <option>Otra</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Código postal</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Confirmo haber leído nuestra política de protección de datos.
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+</form>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1><a href="https://www.hyperledger.org/" href="_blank">Hyperledger Foundation</a></h1>
+      <p>Hyperledger es una fundación enfocada en ayudar a las empresas a la hora de implementar tecnología blockchain. Actualmente es la compañía que más servicios criptográficos ofrece en el mercado con una lista de empresas que la utilizan enorme.</p>
+      <p>En sus propias palabras: Blockchain resuelve un problema enorme. Muchas organizaciones quieren compartir sus datos en una base de datos distribuida, pero sin confiar en unúnico usuario. La tecnología blockchain permite guardar información de forma segura, transparentee en una red de sistemas que posee la eficiencia de una red peer-to-peer.</p>
+
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}

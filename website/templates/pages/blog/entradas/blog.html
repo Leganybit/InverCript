@@ -1,0 +1,42 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/btc.css"/>
+
+{% endblock %}
+
+<!---->
+
+{% block content %}
+{{ super() }}
+{% endblock %}
+
+{% block entry %}
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Hyperledger foundaion</h2>
+        <h5>Hyperledger es apoyada por la Linux Foundation</h5>
+        <div class="fakeimg" style="height:300px;"><img style="width: 100%; height: 100%;" src="/static/img/blog/hyperledger.png"/></div>
+        <p>Provee de servicios blockchain a una enorme cantidad de empresas</p>
+        <div class="button">
+        <button><a href="/blog/hyperledger">Ver entrada</a></button>
+        </div>
+      </div>
+      <div class="card">
+        <h2>¿Qué blockchain usan las empresas?</h2>
+        <h5>Top 10 tecnologías blockchain que utilizan las grandes compañias</h5>
+        <div class="fakeimg" style="height:300px;"><img style="width: 100%; height: 100%;" src="/static/img/blog/top10tecnologiasusadasporinstituciones.png"/></div>
+        <br>
+        <div class="button">
+        <button><a href="/blog/hyperledger">Ver entrada</a></button>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}
+
