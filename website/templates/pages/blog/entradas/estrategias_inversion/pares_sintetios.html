@@ -1,0 +1,32 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Volumen{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Pares sintéticos</h1>
+      <h3>Qué son:</h3>
+      <p>Son una estrategia de inversión que permite crear nuestros propios pares de forma manual a la hora de invertir.</p>
+
+      <h3>¿Cómo se utiliza?</h3>
+      <p>Supongamos que considero que ETH va a aumentar de precio más rápido que BTC, pero no existe el par ETH/BTC en la plataforma dónde invertimos.</p>
+      <p>Lo que tenemos que hacer es comprar ETH y ponernos cortos en BTC/USDT por ejemplo, de esta manera estaríamos creando de forma sintética el par ETH/BTC.</p>
+      
+
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}

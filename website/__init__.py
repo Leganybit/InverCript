@@ -33,6 +33,9 @@ def create_app():
 	@app.route("/blog/estrategias/volumen")
 	def volumen():
 		return render_template("/pages/blog/entradas/estrategias_inversion/volumen.html")
+	@app.route("/blog/estrategias/pares_sinteticos")
+	def pares_sinteticos():
+		return render_template("/pages/blog/entradas/estrategias_inversion/pares_sintetios.html")
 		#_______________Criptomonedas___________________
 	@app.route("/blog/criptomonedas/ada")
 	def ada():
