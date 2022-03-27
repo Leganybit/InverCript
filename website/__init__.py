@@ -16,7 +16,7 @@ def create_app():
 	@app.route("/contacto")
 	def contacto():
 		return render_template("/pages/contacto.html")
-
+#__________________-Blog____________________________________
 	@app.route("/blog")
 	def blog():
 		return render_template("/pages/blog/entradas/blog.html")	
@@ -28,7 +28,14 @@ def create_app():
 		return render_template("/pages/blog/entradas/wiki.html")
 	@app.route("/blog/top_10")
 	def top_10():
-		return render_template("/pages/blog/entradas/top_blockchains_usadas_empresas.html")		
-
+		return render_template("/pages/blog/entradas/top_blockchains_usadas_empresas.html")	
+		#______________________Estrategias____________________	
+	@app.route("/blog/estrategias/volumen")
+	def volumen():
+		return render_template("/pages/blog/entradas/estrategias_inversion/volumen.html")
+		#_______________Criptomonedas___________________
+	@app.route("/blog/criptomonedas/ada")
+	def ada():
+		return render_template("/pages/blog/entradas/criptomonedas/ada.html")		
 
 	return app

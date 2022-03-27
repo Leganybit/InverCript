@@ -1,5 +1,5 @@
 {% extends "/pages/blog/blog_base.html" %}
-{% block title %}Inicio{% endblock %}
+{% block title %}Wiki{% endblock %}
 {% block head %}
     {{ super() }}
 
@@ -14,11 +14,19 @@
 <!---->
 {% block entry%}
     <div class="leftcolumn">
-      <h1>Primeros ejemplos</h1>
+      <h1>Wiki del blog</h1>
+      <h4>Que blockchains utilizan las empresas</h4>
       <ul>
         <li><a href="/blog/hyperledger">Hyperledger</a></li>
       </ul>
-      <p>texto del ejemplo 1</p>
+      <h4>Estrategias de inversión</h4>
+      <ul>
+        <li><a href="/blog/estrategias/volumen">Volumen</a></li>
+      </ul>
+      <h4>Criptomonedas</h4>
+      <ul>
+        <li><a href="/blog/criptomonedas/ada">Ada</a></li>
+      </ul>
     </div>
 {% endblock %}
 

@@ -1,0 +1,36 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Volumen{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Volumen</h1>
+      <h3>Para que sirve:</h3>
+      <p>El volumen de una acción es la cantidad de compras y ventas realizadas en x periodo de tiempo, por ello, puede ayudar a la hora de tomar la decisión si queremos entrar o salir de un valor</p>
+
+      <h3>¿Cómo se utiliza?</h3>
+      <p>La cantidad de volumen en un activo releja el interés o falta de él por parte de los inversores. Es decir, un elevado volumen indica un gran número de intercambios, lo que se traduce en un enorme interés por x acción a y precio. Mientras que, un volumen bajo muestra un desinterés por parte de la comunidad. </p>
+
+      <div class="card">
+        <img src="../../static/img/blog/estrategias/volumen.png">
+      </div>
+      <p>En este gráfico de solaria, podemos apreciar cómo aumentaba el interés sólo cuándo el precio caía. Si el precio cae mucho, podemos entender que es pánico, pero con volumen, nos indica que hay personas muy interesadas en la acción a ese precio. </p>
+      <p>Comprar o vender: ¿Tú que harías?</p>
+
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}

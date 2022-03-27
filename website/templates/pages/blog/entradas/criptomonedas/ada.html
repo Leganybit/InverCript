@@ -1,0 +1,43 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Ada</h1>
+      <p>Ada es la moneda nativa de Cardano, una blockchain pública descentralizada que utiliza proof of stake (Prueba de participación).</p>
+      <p>Fue fundada en 2015 por uno de los co-fundadores de Ethereum. Actualmente, es una de las más grandes criptomonedas por capitalización. Su objetivo es quitar a Ethereum como la líder en los smart contracts y superar a esta por su capitalización.</p>
+
+      <h4>Ventajas</h4>
+      <p>
+        <ul>
+          <li>Rápidez en las transacciones.</li>
+          <li>Intenta aprender de los errores de otras blockchains.</li>
+        </ul>
+      </p>
+
+      <h4>Desventajas</h4>
+      <p>
+        <ul>
+          <li>En proof of stake basta con acumular el 51% de las criptomonedas para hacer un ataque.</li>
+          <li>Sigue en desarollo, por lo que aún no está terminada.</li>
+          <li>Lenta adopción por los desarolladores.</li>
+        </ul>
+      </p>
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}
