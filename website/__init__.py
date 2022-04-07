@@ -10,9 +10,9 @@ def create_app():
 	@app.route("/ahorro")
 	def ahorro():
 		return render_template("/pages/ahorro.html")
-	@app.route("/inversion")
-	def inversion():
-		return render_template("/pages/Inversión.html")
+	@app.route("/nuestrosProductos")
+	def nuestrosProductos():
+		return render_template("/pages/nuestrosProductos.html")
 	@app.route("/contacto")
 	def contacto():
 		return render_template("/pages/contacto.html")
