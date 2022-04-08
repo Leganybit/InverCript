@@ -44,5 +44,8 @@ def create_app():
 	@app.route("/blog/beneficios/fiscalidad")
 	def fiscalidad():
 		return render_template("/pages/blog/entradas/BeneficiosDeInvercript/ahorroFiscal.html")	
+	@app.route("/blog/beneficios/seguridad")
+	def seguridad():
+		return render_template("/pages/blog/entradas/BeneficiosDeInvercript/seguridad.html")
 
 	return app
