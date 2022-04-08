@@ -39,6 +39,10 @@ def create_app():
 		#_______________Criptomonedas___________________
 	@app.route("/blog/criptomonedas/ada")
 	def ada():
-		return render_template("/pages/blog/entradas/criptomonedas/ada.html")		
+		return render_template("/pages/blog/entradas/criptomonedas/ada.html")	
+		#______________________Beneficios Inverccript____________________	
+	@app.route("/blog/beneficios/fiscalidad")
+	def fiscalidad():
+		return render_template("/pages/blog/entradas/BeneficiosDeInvercript/ahorroFiscal.html")	
 
 	return app
