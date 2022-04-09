@@ -1,0 +1,53 @@
+{% extends "/pages/blog/blog_base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block head %}
+    {{ super() }}
+
+      <link rel="stylesheet" type="text/css" href="../static/blog.css"/>
+
+{% endblock %}
+
+{% block content %}
+{{super()}}
+{% endblock %}
+<!---->
+
+{% block entry%}
+    <div class="leftcolumn">
+      <h1>Los activos y sus formas</h1>
+      <h3><strong>Según su propiedad</strong></h3>
+      <p>Existen diferentes formas de invertir en un cripto-activo en función de quién tiene la propiedad del mismo:</p>
+        <li><strong>Custodiado por terceros:</strong> El broker o quien te guarda el activo, hace custodia de las llaves que demuestran la propiedad del activo. Estas empresas, trabajando bajo la ley del país respectivo garantizan el cumplimiento de toda la normativa.</li>
+        <li><strong>Custodia propia:</strong> La forma más complicada de tener propiedad de tus fondos es guardarlos tú mismo. Lo que se conoce cómo hacer de tu propio banco, requiere una atención detallada, gestión de las claves y seguridad para que estas no puedan ser robadas.: Tú eres el responsable de las mismas.</li>
+      <p></p>
+      <h4><strong>Activo derivado vs activo puro</strong></h4>
+      <p>Muchas veces, los inversores confunden un activo derivado con el activo en sí. Por ejemplo, comprar un cfd o un futuro, no es lo mismo que comprar el subyacente en spot.</p>
+      <p></p>
+
+      <h3><strong>Tipos de cripto-monedas</strong></h3>
+      <p>En función del objetivo con el que se invierta el dinero, existen opciones más o menos arriesgadas o volátiles.</p>
+      <h4><strong>Las menos arriesgadas:</strong></h4>
+        <li><strong>Criptomonedas estables:</strong> Comprar criptos que replican el valor de nuestras propias monedas fiat cómo euros o dólares, es una buena forma de mantener nuestro capital lo más libre de riesgos, mientras a su vez, lo podemos invertir para obtener una rentabilidad.</li>
+        <li><strong>Cripto commodities:</strong> Las criptomonedas respaldadas por materias primas, son una buena forma de invertir en nuestras materias primas favoritas y aún así obtener rendimientos sobre las mismas.</li>
+        <li><strong>Criptomonedas seguras:</strong> Si bien, comprar Bitcoin o Ethereum es volátil, es seguro debido a la capacidad de cómputo que protege a dichas blockchains, por ello, estas criptos son seguras y la posibilidad de que alguien pueda robar los fondos es cuánto menos, imposible.</li>
+      <h4><strong>Las más arriesgadas:</strong></h4>
+        <li><strong>Criptomonedas nuevas:</strong> La novedad de éstas o sus formas de asegurar la red, pueden hacer que una blockchain sea insegura, es por ello, que muchos proyectos que existen hoy día son pirateados o sufren fallas de seguridad. Estas criptos, son en sí muy especulativas y por ende, volátiles.</li>
+        <li><strong>Criptos de segunda capa: </strong>La falta de escalabilidad inicial de algunas criptos, han incentivado el surgimiento de criptomonedas de segunda capa que utilizan parte de la blockchain principal, pero añaden mayor rapidez o contratos inteligentes. Estas criptos son más inseguras que sus monedas madre.</li>
+        <li><strong>Derechos sobre un pool de liquidez: </strong>Con la extensión y amplitud que está tomando DEFI, está surgiendo un nuevo tipo de cripto activo: Uno que demuestra que tienes una propiedad sobre x parte de una pool de liquidez</li>
+        <li><strong>Tokens de auto-staking: </strong>La mezcla del staking y los tokens, ha resultado en un tipo de token que realia el staking por tí, para que así no tengas que preocuparte de tener tus criptomonedas en la pool de staking correcta. Estos tokens tienen riesgos añadidos como el de cuellos de botella, bulnerabilidades del código, etc.</li>
+        <li><strong>Token liquidadores: </strong>Tokens diseñados para reunir fondos y actuar de liquidadores en mercados DEFI. El objetivo de estos tokens es repartir el beneficio obtenido por la ejecución de dichas liquidaciones, sin embargo, son muy nuevos y arriesgados.</li>
+
+      <h3><strong>Tipos de cripto-derivados</strong></h3>
+      <p>Los derivados son activos financieros utilizados como cobertura para reducir el riesgo de una entrada al mercado</p>
+        <li><strong>Futuros:</strong> Los futuros, si son perpetuos, nos permiten apostar en contra o a favor del precio de un activo sin necesidad de comprar el subyacente en sí.</li>
+        <li><strong>Pares sintéticos:</strong> Son pares creados artificialmente mediante la compra de un activo y la venta de un futuro diferente al mismo.</li>
+        <li><strong>Opciones:</strong> Las opciones son ingeniería financiera que nos permiten invertir en un activo con previo conocimiento de lo que podemos perder o ganar y así aprovecharnos de la subida o bajada sin arriesgar todo el capital.</li>
+
+
+    </div>
+{% endblock %}
+
+{% block footer%}
+{{super()}}
+{% endblock %}

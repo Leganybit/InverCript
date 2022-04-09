@@ -47,5 +47,8 @@ def create_app():
 	@app.route("/blog/beneficios/seguridad")
 	def seguridad():
 		return render_template("/pages/blog/entradas/BeneficiosDeInvercript/seguridad.html")
+	@app.route("/blog/beneficios/diversificacion")
+	def diversificacion():
+		return render_template("/pages/blog/entradas/BeneficiosDeInvercript/diversificacion.html")
 
 	return app
