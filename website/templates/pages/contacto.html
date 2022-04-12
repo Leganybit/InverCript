@@ -10,33 +10,39 @@
 <!---->
 
 <div class="container">
+  <br>
+  <br>
   <p><h4>Teléfono de contacto: </h4>663564653</p>
   <h4>e-mail:</h4>
   <p>invercript.oficial@protomail.com</p>
   <br>
   <h4>Contactanos:</h4>
   Los campos marcados con * serán obligatorios.
-<form class="row g-3">
+  <p>
+  {{2+2}}
+  {{ciudad}}
+  </p>
+<form class="row g-3" method="post">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email*</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <input id="e-mail" type="email" class="form-control" id="inputEmail4" name="e-mail">
   </div>
   <div class="col-12">
     <label for="inputAddress" class="form-label">Dirección</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Calle Federico García Lorca 23, Madrid, España">
+    <input id="direcion" type="text" class="form-control" id="inputAddress" placeholder="" name="direccion">
   </div>
-  <div class="col-12">
+  <!--<div class="col-12">
     <label for="inputAddress2" class="form-label">Dirección 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+  </div>-->
   <div class="col-md-6">
-    <label for="inputCity" class="form-label">Ciudad*</label>
-    <input type="text" class="form-control" id="inputCity">
+    <label for="inputCity" class="form-label">Ciudad</label>
+    <input id="ciudad" type="text" class="form-control" id="inputCity" name="ciudad">
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Comunidad</label>
-    <select id="inputState" class="form-select">
-      <option selected>Galicia</option>
+    <select id="inputcomunidad" class="form-select" name="comunidad">
+      <option>Galicia</option>
       <option>Navarra</option>
       <option>País Vasco</option>
       <option>Aragón</option>
@@ -48,16 +54,19 @@
       <option>Andalucía</option>
       <option>Baleares</option>
       <option>Canarias</option>
-      <option>Otra</option>
+      <option selected>Otra</option>
     </select>
   </div>
   <div class="col-md-2">
     <label for="inputZip" class="form-label">Código postal</label>
-    <input type="text" class="form-control" id="inputZip">
+    <input id="codigo-postal" type="text" class="form-control" name="codPostal">
   </div>
+
   <div class="col-12">
+    <br>
+    <br>
     <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <input id="proteccion-confirmacion" class="form-check-input" type="checkbox" name="check">
       <label class="form-check-label" for="gridCheck">
         Confirmo haber leído nuestra política de protección de datos.
       </label>
@@ -69,6 +78,8 @@
 </form>
 
 </div>
+<p id="textoJson"></p>
 
-
+<script src="../../static/contacto.js">
+</script>
 {% endblock %}

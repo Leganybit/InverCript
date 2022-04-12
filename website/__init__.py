@@ -1,4 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for
+import json
+import os 
+import website.contact_form
+
 
 def create_app():
 	app = Flask(__name__)
@@ -13,9 +17,10 @@ def create_app():
 	@app.route("/nuestrosProductos")
 	def nuestrosProductos():
 		return render_template("/pages/nuestrosProductos.html")
-	@app.route("/contacto")
+	@app.route("/contacto", methods=['GET', 'POST'])
 	def contacto():
-		return render_template("/pages/contacto.html")
+		website.contact_form.data_form_save()
+		return render_template("/pages/contacto.html", email = "caca", ciudad=request.form.get("ciudad"))
 #__________________-Blog____________________________________
 	@app.route("/blog")
 	def blog():
